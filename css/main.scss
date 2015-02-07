@@ -1,0 +1,57 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 'Vollkorn', serif;
+$base-font-size:   12px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$san-serif-font-family: 'Karla', sans-serif;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+$notblack:         #231F20;
+
+$grey-color:       #C7C8CA;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  $notblack;
+$red:              #BE1E2D;
+
+
+// Width of the content area
+$content-width:    500px;
+
+$on-palm:          500px;
+$on-laptop:        500px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

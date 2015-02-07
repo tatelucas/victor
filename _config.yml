@@ -1,0 +1,12 @@
+# Site settings
+title: Victor
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  A new clothing brand by Noble Denim that delivers quality clothes at a fair price.  
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: wearevictor
+github_username:  wearevictor
+
+# Build settings
+markdown: kramdown
