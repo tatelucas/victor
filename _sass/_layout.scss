@@ -95,6 +95,12 @@
     font-size: 14px;
     letter-spacing: 1px;
 
+    span {
+        color: white;
+        display: block;
+        padding: 15px;
+    }
+
     a {
         color: white;
         display: block;
@@ -297,6 +303,15 @@ h2.page-heading {
 .post-link {
     display: block;
     font-size: 24px;
+}
+
+.home {
+    ul {
+        list-style-position: inside;
+        li {
+            padding-bottom: 10px;
+        }
+    }
 }
 
 
