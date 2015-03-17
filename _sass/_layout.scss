@@ -184,16 +184,20 @@
     //padding: $spacing-unit*2 0;
     padding: 0;
     background: $grey-color;
+    overflow: hidden;
+    margin-bottom: -1px;
 
     .videocont {
         max-width: 700px;
-        margin: 0 auto -1px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     iframe {
         display: block;
         margin: 0 auto;
         max-width: 100%;
+        padding: 0;
         //height: auto;
     }
 }
