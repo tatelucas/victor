@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: lighten($notblack, 35%);
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -97,15 +97,14 @@ a {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
         color: $text-color;
         text-decoration: underline;
     }
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /**
